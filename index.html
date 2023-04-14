@@ -17,20 +17,21 @@
     <!--NAV BAR-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a href="#" class="navbar-brand">LOGO</a>
+            <a href="#" class="navbar-brand"><img src="img/Design sem nome (1).svg" alt="" width="60px"></a>
             <button
                 type="button"
                 class="navbar-toggler"
                 data-bs-target="#navbarNav"
-                data-bs-toggle="colapse"
+                data-bs-toggle="collapse"
                 aria-controls="navbarNav"
                 aria-expanded="false"
-                aria-label="Toggle Navbar"
+                aria-lable="Toggle Navbar"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse  text-center mt-3 rounded" id="navbarNav">
+                <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#" class="nav-link text-white">Cadastro</a>
@@ -59,9 +60,23 @@
     <!--BANNER IMAGE-->
     <div class="banner-image w-100 vh-100 d-flex justify-content-start align-items-center">
         <dev class="content text-center">
-            <h1 class="text-white">Educa-MEET</h1>
+            <div class="container"> 
+                <div class="row mx-auto" >
+                    <div class="col text-white">
+                        <h1>Educa-MEET</h1>
+                    </div>
+                    
+                    <div class="col">
+                        sdfsdf
+                    </div>
+                </div>
+            </div>
+            
         </dev>
     </div>
+
+
+    
 
 
     <!--Main Content Area-->
@@ -86,6 +101,32 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur molestias illum possimus qui amet, esse accusantium aut sed doloremque repellendus molestiae id deleniti exercitationem? Perferendis minus fugiat ex consequuntur!
             </p>
         </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur molestias illum possimus qui amet, esse accusantium aut sed doloremque repellendus molestiae id deleniti exercitationem? Perferendis minus fugiat ex consequuntur!
+            </p>
+        </div>
+        <div class="p-5 border">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur molestias illum possimus qui amet, esse accusantium aut sed doloremque repellendus molestiae id deleniti exercitationem? Perferendis minus fugiat ex consequuntur!
+            </p>
+        </div>
     </div>
+
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
 </body>
 </html>
