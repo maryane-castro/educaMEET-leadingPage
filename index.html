@@ -27,7 +27,9 @@
             
         }
         header > #links{
-            margin-left: 2%;
+            position: fixed;
+            margin-left: 7%;
+            
         }
 
         header > #links > button{
@@ -72,6 +74,10 @@
         }
         .bloco{
             width: 40vw;
+        }
+
+        .pading{
+            padding: 10px;
         }
 
 
@@ -193,5 +199,18 @@
             </p>
         </div>
     </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('#links');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 950) {
+          nav.classList.add('bg-dark', 'shadow', 'rounded-1', 'pading');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
 </body>
 </html>
